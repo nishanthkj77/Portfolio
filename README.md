@@ -47,3 +47,11 @@ Portfolio/
 │── script.js
 │── README.md
 ```
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/nishanthkj77/Portfolio.git
