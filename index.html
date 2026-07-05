@@ -3,106 +3,419 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nishanth K J | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Nishanth K J, an MCA student and full-stack developer building modern web applications, backend APIs, and AI-assisted systems."
+  />
+  <meta name="theme-color" content="#07080d" />
+  <title>Nishanth K J | Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <h2 class="logo">Nishanth K J</h2>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <section class="hero">
-      <div class="hero-content">
-        <p class="tagline">MCA Student | Aspiring Software Developer</p>
-        <h1>Hi, I'm <span>Nishanth K J</span></h1>
-        <p>
-          I am passionate about building practical software projects using Python,
-          Java, Django, REST API, databases, and machine learning concepts.
-        </p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn secondary">Contact Me</a>
-        </div>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Nishanth K J home">
+        <span class="brand-mark">NKJ</span><span class="brand-dot">.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+        </ul>
+        <a class="nav-cta" href="#contact">Let's talk</a>
       </div>
-    </section>
+    </nav>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I am an MCA student preparing for software development roles. I enjoy
-        learning by creating real-world projects and improving my coding,
-        problem-solving, communication, and technical interview skills.
-      </p>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">MCA Student · Full-Stack Developer</p>
+        <h1 id="hero-title">
+          I build software that feels
+          <span class="text-gradient">sharp</span>, works hard,
+          and solves real problems.
+        </h1>
+
+        <p class="hero-lead">
+          I work across frontend, backend, databases, and AI integration using
+          Java, Python, JavaScript, React, Node.js, Express, MongoDB, and SQL.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <a
+            class="button button-ghost"
+            href="https://github.com/nishanthkj77"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub profile
+          </a>
+        </div>
+
+        <div class="availability" aria-label="Current availability">
+          <span class="status-pulse" aria-hidden="true"></span>
+          <span>Open to software development opportunities</span>
+        </div>
+      </div>
+
+      <aside class="hero-console reveal" aria-label="Current project highlight">
+        <div class="console-topbar">
+          <div class="console-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="console-label">current-build.json</span>
+        </div>
+
+        <div class="console-body">
+          <p class="console-kicker">FLAGSHIP PROJECT</p>
+          <h2>CampusSync AI</h2>
+          <p>
+            Full-stack academic operations platform with role-based access,
+            real API integration, database persistence, and a Python AI engine
+            for timetable generation.
+          </p>
+
+          <div class="architecture" aria-label="CampusSync AI technology stack">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Python AI</span>
+            <span>JWT</span>
+          </div>
+
+          <a
+            class="inline-link"
+            href="https://github.com/nishanthkj77/CampusSync-AI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View repository <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </aside>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="card">Python</div>
-        <div class="card">Java</div>
-        <div class="card">C</div>
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Django</div>
-        <div class="card">REST API</div>
-        <div class="card">MySQL</div>
-        <div class="card">Machine Learning</div>
-        <div class="card">NLP</div>
-        <div class="card">GitHub</div>
+    <section class="ticker" aria-label="Core technologies">
+      <div class="ticker-track">
+        <span>Java</span><i></i>
+        <span>Python</span><i></i>
+        <span>JavaScript</span><i></i>
+        <span>React</span><i></i>
+        <span>Node.js</span><i></i>
+        <span>Express</span><i></i>
+        <span>MongoDB</span><i></i>
+        <span>REST APIs</span><i></i>
+        <span>AI Integration</span>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
+    <section id="work" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects built to prove the work, not just list the tools.</h2>
+      </div>
+
+      <div class="featured-project reveal">
+        <div class="project-index">01</div>
+
+        <div class="project-copy">
+          <p class="project-label">Featured · Full-Stack + AI</p>
+          <h3>CampusSync AI</h3>
+          <p>
+            An academic operations and timetable planning platform designed with
+            real frontend-to-backend integration, MongoDB persistence, role-based
+            access control, and a Python AI optimization workflow.
+          </p>
+
+          <ul class="project-points">
+            <li>Admin, HOD, Faculty, and Student role flows</li>
+            <li>REST API integration with persistent application data</li>
+            <li>AI-assisted timetable generation pipeline</li>
+            <li>Modern dashboard experience for academic operations</li>
+          </ul>
+
+          <div class="project-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/nishanthkj77/CampusSync-AI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View source
+            </a>
+          </div>
+        </div>
+
+        <div class="project-visual" aria-label="CampusSync AI architecture overview">
+          <div class="visual-grid"></div>
+
+          <div class="system-node node-client">
+            <span>01</span>
+            <strong>React Client</strong>
+            <small>Vite · UI · API calls</small>
+          </div>
+
+          <div class="system-line line-one"></div>
+
+          <div class="system-node node-server">
+            <span>02</span>
+            <strong>Node API</strong>
+            <small>Express · JWT · REST</small>
+          </div>
+
+          <div class="system-line line-two"></div>
+
+          <div class="system-node node-ai">
+            <span>03</span>
+            <strong>Python AI</strong>
+            <small>Optimization engine</small>
+          </div>
+
+          <div class="system-node node-db">
+            <span>DB</span>
+            <strong>MongoDB</strong>
+            <small>Persistent records</small>
+          </div>
+        </div>
+      </div>
+
       <div class="project-grid">
-        <article class="project-card">
-          <h3>Implicit Hate Speech Detection Using RoBERTa</h3>
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-number">02</span>
+            <span class="project-type">Frontend</span>
+          </div>
+
+          <h3>Personal Portfolio</h3>
           <p>
-            A machine learning research project for binary hate speech classification
-            using a transformer-based RoBERTa model.
+            A responsive developer portfolio designed to present selected work,
+            technical focus, and professional contact information with a strong,
+            modern visual system.
           </p>
-          <p class="tech">Python • NLP • RoBERTa • Machine Learning</p>
+
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+
+          <div class="card-links">
+            <a
+              href="https://nishanthkj77.github.io/Portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Live site ↗</a>
+
+            <a
+              href="https://github.com/nishanthkj77/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source ↗</a>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>Student Registration System</h3>
-          <p>
-            A Java-based web application for managing student registration data
-            with database connectivity.
-          </p>
-          <p class="tech">Java • Servlet/JSP • MySQL • Eclipse</p>
-        </article>
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <span class="project-number">03</span>
+            <span class="project-type">Node.js</span>
+          </div>
 
-        <article class="project-card">
-          <h3>Django REST API Project</h3>
+          <h3>Node.js Web Project</h3>
           <p>
-            A backend API project planned with CRUD operations using Django REST Framework.
+            A server-side web project created to strengthen Node.js development,
+            project structure, routing concepts, and local application workflow.
           </p>
-          <p class="tech">Python • Django • DRF • SQLite/MySQL</p>
+
+          <div class="project-tags">
+            <span>Node.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+
+          <div class="card-links">
+            <a
+              href="https://github.com/nishanthkj77/nodejs-simple-static-website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Source ↗</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:kjwork298@gmail.com">kjwork298@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/nishanthkj77" target="_blank">github.com/nishanthkj77</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/nishanth-k-j/" target="_blank">linkedin.com/in/nishanth-k-j</a></p>
+    <section id="about" class="content-section about-section">
+      <div class="section-shell about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Engineering mindset first. Tools second.</h2>
+        </div>
+
+        <div class="about-copy reveal">
+          <p>
+            I am an MCA student focused on becoming a strong software developer
+            through practical project work. I enjoy turning requirements into
+            working systems, connecting frontend interfaces to real APIs, and
+            building applications that manage real data instead of static demos.
+          </p>
+
+          <p>
+            My current direction is full-stack engineering with a strong interest
+            in backend architecture, Java and Python development, database-driven
+            applications, and useful AI integration.
+          </p>
+
+          <div class="focus-row">
+            <div>
+              <span>01</span>
+              <strong>Build</strong>
+              <small>Real end-to-end applications</small>
+            </div>
+
+            <div>
+              <span>02</span>
+              <strong>Connect</strong>
+              <small>Frontend, APIs, databases, AI</small>
+            </div>
+
+            <div>
+              <span>03</span>
+              <strong>Improve</strong>
+              <small>Architecture, DSA, deployment</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="content-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical Stack</p>
+        <h2>A practical stack across product, backend, data, and AI.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card reveal">
+          <span class="stack-index">01</span>
+          <h3>Languages</h3>
+          <p>Java · Python · JavaScript · C</p>
+        </article>
+
+        <article class="stack-card reveal">
+          <span class="stack-index">02</span>
+          <h3>Frontend</h3>
+          <p>React · Vite · HTML5 · CSS3</p>
+        </article>
+
+        <article class="stack-card reveal">
+          <span class="stack-index">03</span>
+          <h3>Backend</h3>
+          <p>Node.js · Express.js · REST APIs · JWT · Django</p>
+        </article>
+
+        <article class="stack-card reveal">
+          <span class="stack-index">04</span>
+          <h3>Databases</h3>
+          <p>MongoDB · MySQL · SQL · SQLite</p>
+        </article>
+
+        <article class="stack-card reveal">
+          <span class="stack-index">05</span>
+          <h3>AI / ML</h3>
+          <p>Machine Learning · NLP · RoBERTa · Transformer Models</p>
+        </article>
+
+        <article class="stack-card reveal">
+          <span class="stack-index">06</span>
+          <h3>Tools</h3>
+          <p>Git · GitHub · VS Code · Eclipse · Google Colab</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="credentials" class="content-section credential-section">
+      <div class="section-shell credential-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Credential</p>
+          <h2>Java foundation, formally validated.</h2>
+        </div>
+
+        <article class="credential-card reveal">
+          <div class="credential-meta">
+            <span>ORACLE</span>
+            <span>2026</span>
+          </div>
+
+          <h3>Oracle Java Foundations</h3>
+          <p class="credential-code">1Z0-811</p>
+          <p>
+            Passed in May 2026, strengthening my foundation in Java programming
+            concepts and object-oriented development.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-shell reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something useful.</h2>
+      <p>
+        I'm currently exploring software development and full-stack engineering
+        opportunities where I can contribute, learn fast, and ship real work.
+      </p>
+
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:kjwork298@gmail.com">Email me</a>
+
+        <a
+          class="button button-ghost"
+          href="https://www.linkedin.com/in/nishanth-k-j/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          class="button button-ghost"
+          href="https://github.com/nishanthkj77"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nishanth K J. Built with HTML, CSS and JavaScript.</p>
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <p>© <span id="current-year">2026</span> Nishanth K J</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
