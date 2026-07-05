@@ -1,57 +1,45 @@
-# Personal Portfolio Website
+# Nishanth K J — Portfolio
 
-A clean and responsive personal portfolio website built using HTML, CSS, and JavaScript.
+A production-oriented developer portfolio built with React, TypeScript, Vite, Tailwind CSS, and Motion.
 
-This portfolio is created to showcase my skills, projects, contact information, and career goal as an MCA student preparing for software development roles.
+## Stack
 
----
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4 via `@tailwindcss/vite`
+- Motion for React
+- Lucide React
+- GitHub Pages deployment workflow
 
-## 🚀 Features
-
-- Responsive personal portfolio layout
-- Smooth navigation sections
-- About Me section
-- Technical skills section
-- Project showcase section
-- Contact details with GitHub and LinkedIn links
-- Clean and simple user interface
-
----
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Codespaces
-- Git & GitHub
-
----
-
-## 📌 Sections
-
-- Home
-- About
-- Skills
-- Projects
-- Contact
-
----
-
-## 📂 Project Structure
-
-```txt
-Portfolio/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-```
----
-
-## ▶️ How to Run
-
-1. Clone the repository:
+## Local development
 
 ```bash
-git clone https://github.com/nishanthkj77/Portfolio.git
+npm install
+npm run dev
+```
+
+Production verification:
+
+```bash
+npm run build
+npm run lint
+```
+
+## Project structure
+
+```text
+src/
+├── components/   # Reusable UI and section components
+├── data/         # Project and capability data
+├── hooks/        # Shared React hooks
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## Deployment
+
+The repository includes `.github/workflows/deploy.yml` for GitHub Pages. The Vite base path is configured as `/Portfolio/`.
+
+In GitHub repository settings, set **Pages → Source** to **GitHub Actions**.
