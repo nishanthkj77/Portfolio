@@ -1,4 +1,4 @@
-import type { Project } from "../types";
+ import type { Project } from "../types";
 
 export const projects: Project[] = [
   {
@@ -19,8 +19,24 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "nodejs-web",
+    id: "autopulse",
     index: "02",
+    title: "AutoPulse",
+    category: "Android product · Offline-first system",
+    summary:
+      "An offline-first vehicle health passport and predictive maintenance app concept for managing service history, document alerts, vehicle records, and maintenance decisions in one secure mobile system.",
+    details: [
+      "Vehicle-type based service and maintenance tracking",
+      "Document expiry alerts for insurance, registration, PUC, permit, and service records",
+      "Offline-first local data storage designed for privacy and reliability",
+      "Predictive maintenance logic based on odometer, service intervals, and vehicle usage",
+      "Planned OCR-assisted document reading to reduce manual entry",
+    ],
+    stack: ["Android", "Kotlin", "Jetpack Compose", "Room", "WorkManager", "ML Kit"],
+  },
+  {
+    id: "nodejs-web",
+    index: "03",
     title: "Node.js Web Project",
     category: "Backend · Web fundamentals",
     summary:
@@ -35,7 +51,7 @@ export const projects: Project[] = [
   },
   {
     id: "portfolio-platform",
-    index: "03",
+    index: "04",
     title: "Portfolio Platform",
     category: "Frontend engineering",
     summary:
@@ -52,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     id: "roberta-research",
-    index: "04",
+    index: "05",
     title: "Implicit Hate Speech Detection",
     category: "NLP research",
     summary:
