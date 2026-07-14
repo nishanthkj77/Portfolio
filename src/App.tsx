@@ -7,7 +7,8 @@ import { FeaturedProject } from "./components/FeaturedProject";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
-import { ProjectGrid } from "./components/ProjectGrid";
+import { ProductGrid } from "./components/ProjectGrid";
+import { ProductLab } from "./components/ProductLab";
 import { SectionIntro } from "./components/SectionIntro";
 import { projects } from "./data/projects";
 
@@ -20,13 +21,15 @@ export default function App() {
   });
 
   const featured = projects.find((project) => project.featured) ?? projects[0];
-  const autoPulse = projects.find((project) => project.id === "autopulse");
-
-  const showcaseIds = new Set(
-    [featured.id, autoPulse?.id].filter(Boolean) as string[]
+  const productProjects = projects.filter((project) =>
+    ["dayflow", "autopulse"].includes(project.id)
   );
 
-  const remaining = projects.filter((project) => !showcaseIds.has(project.id));
+  const reservedIds = new Set(
+    [featured.id, ...productProjects.map((project) => project.id)]
+  );
+
+  const remaining = projects.filter((project) => !reservedIds.has(project.id));
 
   return (
     <>
@@ -43,13 +46,13 @@ export default function App() {
         <section id="work" className="section-pad site-shell">
           <SectionIntro
             label="Selected work"
-            title="Systems and projects that show the engineering work."
-            description="The portfolio is intentionally selective. The emphasis is on end-to-end implementation, technical responsibility, and what each project demonstrates."
+            title="Systems and products that show the engineering work."
+            description="The portfolio is intentionally selective. CampusSync AI is the flagship system, while DayFlow and AutoPulse show mobile product thinking with offline-first Android architecture."
           />
 
           <FeaturedProject project={featured} />
 
-          {autoPulse ? <FeaturedProject project={autoPulse} /> : null}
+          <ProductLab projects={productProjects} />
 
           <ProjectGrid projects={remaining} />
         </section>
