@@ -7,7 +7,7 @@ import { FeaturedProject } from "./components/FeaturedProject";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
-import { ProductGrid } from "./components/ProjectGrid";
+import { ProjectGrid } from "./components/ProjectGrid";
 import { ProductLab } from "./components/ProductLab";
 import { SectionIntro } from "./components/SectionIntro";
 import { projects } from "./data/projects";
