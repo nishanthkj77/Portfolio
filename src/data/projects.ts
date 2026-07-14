@@ -19,24 +19,42 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "autopulse",
+    id: "dayflow",
     index: "02",
-    title: "AutoPulse",
-    category: "Android product · Offline-first system",
+    title: "DayFlow",
+    category: "Android product · Offline-first planner",
     summary:
-      "An offline-first vehicle health passport and predictive maintenance app concept for managing service history, document alerts, vehicle records, and maintenance decisions in one secure mobile system.",
+      "A private offline-first Android planner for everyday tasks, recurring routines, gym workouts, study sessions, Pomodoro focus, progress tracking, reminders, and local backup/restore.",
+    details: [
+      "Today dashboard with real completion percentage and timeline",
+      "Task, routine, gym, study, calendar, and progress modules",
+      "Room-powered local database with offline-first architecture",
+      "WorkManager and alarm scheduling for reminders",
+      "Premium Compose UI with branded cards, typography, and navigation",
+    ],
+    stack: ["Android", "Kotlin", "Jetpack Compose", "Room", "DataStore", "WorkManager", "Material 3"],
+    repository: "https://github.com/nishanthkj77/DayFlow",
+  },
+  {
+    id: "autopulse",
+    index: "03",
+    title: "AutoPulse",
+    category: "Android product · Vehicle health system",
+    summary:
+      "An offline-first vehicle health passport and predictive maintenance app for managing service history, document alerts, vehicle records, and maintenance decisions in one secure mobile system.",
     details: [
       "Vehicle-type based service and maintenance tracking",
       "Document expiry alerts for insurance, registration, PUC, permit, and service records",
       "Offline-first local data storage designed for privacy and reliability",
       "Predictive maintenance logic based on odometer, service intervals, and vehicle usage",
-      "Planned OCR-assisted document reading to reduce manual entry",
+      "Premium mobile UI for vehicle records, timeline, documents, and insights",
     ],
     stack: ["Android", "Kotlin", "Jetpack Compose", "Room", "WorkManager", "ML Kit"],
+    repository: "https://github.com/nishanthkj77/AutoPulse",
   },
   {
     id: "nodejs-web",
-    index: "03",
+    index: "04",
     title: "Node.js Web Project",
     category: "Backend · Web fundamentals",
     summary:
@@ -51,7 +69,7 @@ export const projects: Project[] = [
   },
   {
     id: "portfolio-platform",
-    index: "04",
+    index: "05",
     title: "Portfolio Platform",
     category: "Frontend engineering",
     summary:
@@ -68,7 +86,7 @@ export const projects: Project[] = [
   },
   {
     id: "roberta-research",
-    index: "05",
+    index: "06",
     title: "Implicit Hate Speech Detection",
     category: "NLP research",
     summary:
